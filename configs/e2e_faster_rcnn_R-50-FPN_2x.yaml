@@ -2,6 +2,7 @@ MODEL:
   TYPE: generalized_rcnn
   CONV_BODY: FPN.fpn_ResNet50_conv5_body
   FASTER_RCNN: True
+  LOAD_IMAGENET_PRETRAINED_WEIGHTS: False #### can't download
 RESNETS:
   IMAGENET_PRETRAINED_WEIGHTS: 'data/pretrained_model/resnet50_caffe.pth'
 NUM_GPUS: 8
